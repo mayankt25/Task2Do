@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
-mongoose.connect("mongodb+srv://admin-mayank:%40NYDEVA%4025@cluster0.wlsli6q.mongodb.net/todolistDB");
+mongoose.connect(DATABASE_URL);
 
 const itemsSchema = {
   name: String
