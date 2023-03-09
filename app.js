@@ -16,7 +16,7 @@ app.use(express.static("public"));
 
 app.set("view engine", "ejs");
 
-mongoose.connect(DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URL);
 
 const itemsSchema = {
   name: String
